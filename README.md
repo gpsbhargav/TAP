@@ -12,7 +12,7 @@ Training and evaluation of "Translucent Answer Prediction" on HotpotQA
 - PyTorch implementation of BERT from https://github.com/gpsbhargav/pytorch-pretrained-BERT
 
 ## Instructions for training TAP
-- Download training and development sets of HotpotQA distractor setting into TAP/hotpotqa/
+- Download training and development sets of HotpotQA distractor setting into TAP/hotpotqa/. Google's pretrained model and vocab are also inside a docker image on dockerhub (docker pull gpsbhargav/iljddtrywo). The same image also contains the trained TAP and was submitted for official evaluation and leaderboard entry.
 - Preprocess the data for the bottom machine by runing preproc_1.ipynb and preproc_2.ipynb (twice each. With the "TRAINING" flag set to True and False)in TAP/bottom_machine/data/ans_and_sf/.
 - Create a directory called results in TAP/bottom_machine/
 - Training bottom machine: run TAP/bottom_machine/code/train_sf_only.py. This will also generate predictions on the dev set in .TAP/bottom_machine/results/<experiment_name>.
